@@ -9,7 +9,7 @@
 
 <div align="center">
 
-![hyde_banner](https://github.com/amnxd/dotfiles/main/Source/assets/hyde_banner.png)
+![hyde_banner](https://github.com/prasanthrangan/hyprdots/main/Source/assets/hyde_banner.png)
 
 <br>
 
