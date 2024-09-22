@@ -1,4 +1,5 @@
-###### *<div align="right"><sub>// xD</sub></div>*
+###### *<div align="right"><sub>// design by t2</sub></div>*
+
 
 <!--
 <img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2FmT5YqjaJFh%3Fwith_counts%3Dtrue&query=%24.approximate_member_count&suffix=%20members&style=for-the-badge&logo=discord&logoSize=auto&label=The%20HyDe%20Project&labelColor=ebbcba&color=c79bf0">
@@ -78,7 +79,7 @@ For more details, you can refer to [Hyde-cli - dots management wiki](https://git
 
 <div align="right">
   <br>
-  <a href="#//-xD"><kbd> <br> 🡅 <br> </kbd></a>
+  <a href="#-design-by-t2"><kbd> <br> 🡅 <br> </kbd></a>
 </div>
 
 ## Themes
@@ -112,7 +113,7 @@ For more information, visit [bud/hyde-themes](https://github.com/prasanthrangan/
 
 <div align="right">
   <br>
-  <a href="#//-xD"><kbd> <br> 🡅 <br> </kbd></a>
+<a href="#-design-by-t2"><kbd> <br> 🡅 <br> </kbd></a>
 </div>
 
 ## Styles
@@ -158,7 +159,7 @@ For more information, visit [bud/hyde-themes](https://github.com/prasanthrangan/
 
 <div align="right">
   <br>
-  <a href="#//-xD"><kbd> <br> 🡅 <br> </kbd></a>
+<a href="#-design-by-t2"><kbd> <br> 🡅 <br> </kbd></a>
 </div>
 
 ## Keybindings
@@ -223,6 +224,6 @@ For more information, visit [bud/hyde-themes](https://github.com/prasanthrangan/
 
 <div align="right">
   <br>
-  <a href="#//-xD"><kbd> <br> 🡅 <br> </kbd></a>
+<a href="#-design-by-t2"><kbd> <br> 🡅 <br> </kbd></a>
 </div>
 
