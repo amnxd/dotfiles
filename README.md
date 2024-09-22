@@ -79,7 +79,7 @@ For more details, you can refer to [Hyde-cli - dots management wiki](https://git
 
 <div align="right">
   <br>
-  <a href="#// xD"><kbd> <br> 🡅 <br> </kbd></a>
+  <a href="#//-xD"><kbd> <br> 🡅 <br> </kbd></a>
 </div>
 
 ## Themes
@@ -113,7 +113,7 @@ For more information, visit [bud/hyde-themes](https://github.com/prasanthrangan/
 
 <div align="right">
   <br>
-  <a href="#// xD"><kbd> <br> 🡅 <br> </kbd></a>
+  <a href="#//-xD"><kbd> <br> 🡅 <br> </kbd></a>
 </div>
 
 ## Styles
@@ -159,7 +159,7 @@ For more information, visit [bud/hyde-themes](https://github.com/prasanthrangan/
 
 <div align="right">
   <br>
-  <a href="#// xD"><kbd> <br> 🡅 <br> </kbd></a>
+  <a href="#//-xD"><kbd> <br> 🡅 <br> </kbd></a>
 </div>
 
 ## Keybindings
@@ -224,6 +224,6 @@ For more information, visit [bud/hyde-themes](https://github.com/prasanthrangan/
 
 <div align="right">
   <br>
-  <a href="#// xD"><kbd> <br> 🡅 <br> </kbd></a>
+  <a href="#//-xD"><kbd> <br> 🡅 <br> </kbd></a>
 </div>
 
