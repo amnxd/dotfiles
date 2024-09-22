@@ -1,4 +1,4 @@
-###### *<div align="right"><sub>// design by t2</sub></div>*
+###### *<div align="right"><sub>// xD </sub></div>*
 
 
 <!--
@@ -9,7 +9,7 @@
 
 <div align="center">
 
-![hyde_banner](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/hyde_banner.png)
+![hyde_banner](https://github.com/amnxd/dotfiles/main/Source/assets/hyde_banner.png)
 
 <br>
 
@@ -23,7 +23,7 @@
 
 </div><br><br>
 
-https://github.com/prasanthrangan/hyprdots/assets/106020512/7f8fadc8-e293-4482-a851-e9c6464f5265
+https://github.com/amnxd/dotfiles/assets/106020512/7f8fadc8-e293-4482-a851-e9c6464f5265
 
 <br><div align="center"><img width="12%" src="https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/arch.png"/><br></div>
 
@@ -43,7 +43,7 @@ To install, execute the following commands:
 
 ```shell
 pacman -Sy git
-git clone --depth 1 https://github.com/prasanthrangan/hyprdots ~/HyDE
+git clone --depth 1 https://github.com/amnxd/dotfiles ~/HyDE
 cd ~/HyDE/Scripts
 ./install.sh
 ```
@@ -59,7 +59,7 @@ As a second install option, you can also use `Hyde-install`, which might be easi
 View installation instructions for HyDE in [Hyde-cli - Usage](https://github.com/kRHYME7/Hyde-cli?tab=readme-ov-file#usage).
 
 Please reboot after the install script completes and takes you to the SDDM login screen (or black screen) for the first time.
-For more details, please refer to the [installation wiki](https://github.com/prasanthrangan/hyprdots/wiki/Installation).
+For more details, please refer to the [installation wiki](https://github.com/amnxd/dotfiles/wiki/Installation).
 
 ### Updating
 To update HyDE, you will need to pull the latest changes from GitHub and restore the configs by running the following commands:
@@ -85,7 +85,7 @@ For more details, you can refer to [Hyde-cli - dots management wiki](https://git
 ## Themes
 
 All our official themes are stored in a separate repository, allowing users to install them using themepatcher.
-For more information, visit [prasanthrangan/hyde-themes](https://github.com/prasanthrangan/hyde-themes).
+For more information, visit [bud/hyde-themes](https://github.com/prasanthrangan/hyde-themes).
 
 <div align="center">
   <table><tr><td>
@@ -108,7 +108,7 @@ For more information, visit [prasanthrangan/hyde-themes](https://github.com/pras
 
 > [!TIP]
 > Everyone, including you can create, maintain, and share additional themes, all of which can be installed using themepatcher!
-> To create your own custom theme, please refer to the [theming wiki](https://github.com/prasanthrangan/hyprdots/wiki/Theming).
+> To create your own custom theme, please refer to the [theming wiki](https://github.com/amnxd/dotfiles/wiki/Theming).
 > If you wish to have your hyde theme showcased, or you want to find some non-official themes, visit [kRHYME7/hyde-gallery](https://github.com/kRHYME7/hyde-gallery)!
 
 <div align="right">
@@ -224,6 +224,6 @@ For more information, visit [prasanthrangan/hyde-themes](https://github.com/pras
 
 <div align="right">
   <br>
-  <a href="#-design-by-t2"><kbd> <br> 🡅 <br> </kbd></a>
+  <a href="xD"><kbd> <br> 🡅 <br> </kbd></a>
 </div>
 
