@@ -130,14 +130,14 @@ git init
 git add .
 git commit -m "Add Hyprland dotfiles"
 git branch -M main
-git remote add origin git@github.com:<your-username>/hypr-dotfiles.git
+git remote add origin git@github.com:amnxd/hypr-dotfiles.git
 git push -u origin main
 ```
 
 If you prefer HTTPS:
 
 ```bash
-git remote add origin https://github.com/<your-username>/hypr-dotfiles.git
+git remote add origin https://github.com/amnxd/hypr-dotfiles.git
 ```
 
 ## Notes
