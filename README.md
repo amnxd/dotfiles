@@ -134,7 +134,7 @@ git remote add origin git@github.com:amnxd/hypr-dotfiles.git
 git push -u origin main
 ```
 
-If you prefer HTTPS:
+If you prefer HTTPS:c
 
 ```bash
 git remote add origin https://github.com/amnxd/hypr-dotfiles.git
