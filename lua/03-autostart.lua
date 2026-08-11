@@ -1,0 +1,12 @@
+-- Autostart commands and desktop setup when Hyprland starts
+hl.on("hyprland.start", function()
+    hl.exec_cmd("swaync")
+    hl.exec_cmd("sh -c 'pgrep -u "$USER" -f "quickshell .*\/usr\/share\/tide-island" >/dev/null || tide-island >/dev/null 2>&1 &'")
+    hl.exec_cmd("sh -c 'if ! pgrep -x awww-daemon >/dev/null; then awww-daemon >/dev/null 2>&1 & sleep 1; fi; awww img "$HOME/.config/hypr/wallpaper.png"'")
+    hl.exec_cmd("fcitx5 -d")
+    hl.exec_cmd("waypaper --restore")
+    hl.exec_cmd("sh -c 'systemctl --user import-environment WAYLAND_DISPLAY HYPRLAND_INSTANCE_SIGNATURE XDG_CURRENT_DESKTOP XDG_SESSION_TYPE DBUS_SESSION_BUS_ADDRESS; dbus-update-activation-environment --systemd WAYLAND_DISPLAY HYPRLAND_INSTANCE_SIGNATURE XDG_CURRENT_DESKTOP XDG_SESSION_TYPE DBUS_SESSION_BUS_ADDRESS; systemctl --user restart hypridle.service'")
+    hl.exec_cmd("gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'")
+    hl.exec_cmd("gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'")
+    hl.exec_cmd("kitty --class kitty-scratchpad", { workspace = "special:scratchpad silent" })
+end)
