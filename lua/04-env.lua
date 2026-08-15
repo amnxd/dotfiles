@@ -3,7 +3,9 @@ hl.env("XCURSOR_SIZE", "24")
 hl.env("XCURSOR_THEME", "Bibata-Modern-Ice")
 hl.env("HYPRCURSOR_SIZE", "24")
 hl.env("QT_IM_MODULE", "fcitx")
-hl.env("GTK_IM_MODULE", "fcitx")
+-- Unset GTK_IM_MODULE to allow fcitx5's Wayland input-method frontend
+-- to be used. Leaving QT_IM_MODULE set for Qt apps.
+-- hl.env("GTK_IM_MODULE", "fcitx")
 hl.env("XMODIFIERS", "@im=fcitx")
 hl.env("SDL_IM_MODULE", "fcitx")
 hl.env("GLFW_IM_MODULE", "ibus")

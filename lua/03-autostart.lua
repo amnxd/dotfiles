@@ -1,6 +1,6 @@
 -- Autostart commands and desktop setup when Hyprland starts
 hl.on("hyprland.start", function()
-    hl.exec_cmd("swaync")
+    -- hl.exec_cmd("swaync")
     hl.exec_cmd("sh -c 'pgrep -u "$USER" -f "quickshell .*\/usr\/share\/tide-island" >/dev/null || tide-island >/dev/null 2>&1 &'")
     hl.exec_cmd("sh -c 'if ! pgrep -x awww-daemon >/dev/null; then awww-daemon >/dev/null 2>&1 & sleep 1; fi; awww img "$HOME/.config/hypr/wallpaper.png"'")
     hl.exec_cmd("fcitx5 -d")
