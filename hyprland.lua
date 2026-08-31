@@ -1,1 +1,0 @@
-/home/aman/Projects/swen_hyprland_dotfile/hypr/hyprland.lua
