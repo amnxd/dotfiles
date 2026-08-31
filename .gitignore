@@ -1,0 +1,17 @@
+# Backup files
+rofi/backups/
+nvim.backup/
+waybar-tide-island-backup/
+
+# Application state
+Code - OSS/
+
+# Fcitx generated state
+fcitx/dbus/
+
+# Logs
+*.log
+
+# Secrets
+.env
+.env.*

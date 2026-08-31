@@ -1,0 +1,188 @@
+/* --- Global Settings --- */
+* {
+  font-family: "JetBrainsMono Nerd Font", "JetBrains Mono Nerd Font", "Font Awesome 6 Free", sans-serif,"Symbols Nerd Font", monospace;
+  font-size: 13px;
+  font-weight: bold;
+  min-height: 0;
+}
+
+window#waybar {
+  background-color: transparent;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+  border: none;
+  color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+#waybar.empty .modules-center {
+  opacity: 0;
+}
+
+/* --- Tooltip --- */
+tooltip {
+  opacity: 1;
+  padding: 4px;
+  background-color: #3c3836;
+  border: 1px solid rgba(235, 219, 178, 0.8);
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+tooltip label {
+  color: #ebdbb2;
+  font-weight: normal;
+}
+
+/* --- Workspaces --- */
+#workspaces {
+  border-radius: 2px;
+  margin: 5px 3px;
+}
+
+#workspaces button {
+  padding: 0 2px;
+  margin: 0 2px;
+  border-radius: 2px;
+  background-color: #3c3836;
+  /* box-shadow: 0 1px 2px rgba(10, 10, 10, 0.8); */
+  color: #ebdbb2;
+}
+
+#workspaces button.active {
+  background-color: #fabd2f;
+  color: #282828;
+}
+
+#workspaces button:hover {
+  background-color: #504945;
+  color: #fabd2f;
+}
+
+/* --- General Modules --- */
+#tray,
+#window,
+#mpris,
+#cpu,
+#clock,
+#battery,
+#network,
+#memory,
+#backlight,
+#bluetooth,
+#pulseaudio,
+#custom-weather,
+#idle_inhibitor,
+#custom-updatespacman {
+  min-width: 14px;
+  margin: 5px 3px;
+  padding: 0 6px;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(10, 10, 10, 0.8);
+}
+#custom-arch{
+  min-width: 14px;
+  margin: 0 6px 0 3px;
+  padding: 0 3px 0 3px;
+}
+
+#clock:hover,
+#tray:hover,
+#cpu:hover,
+#memory:hover,
+#battery:hover,
+#bluetooth:hover,
+#backlight:hover,
+#custom-weather:hover,
+#idle_inhibitor:hover,
+#custom-updatespacman:hover,
+#network:hover,
+#pulseaudio:hover {
+  opacity: 0.9;
+  background-color: #504945;
+  color: #fabd2f;
+}
+
+/* --- Module Colors --- */
+#window {
+  background-color: #eadbb2;
+  color: #282828;
+}
+
+#custom-updatespacman,
+#cpu {
+  background-color: #fabd2f;
+  color: #282828;
+}
+
+#clock,
+#idle_inhibitor,
+#custom-weather,
+#tray{
+  background-color: #3c3836;
+  color: #ebdbb2;
+}
+
+#battery {
+  background-color: #458588;
+  color: #282828;
+}
+
+#memory {
+  background-color: #076678;
+  color: #282828;
+}
+
+#network {
+  background-color: #689d6a;
+  color: #282828;
+}
+
+#pulseaudio {
+  background-color: #fb4934;
+  color: #282828;
+}
+
+#backlight {
+  background-color: #d3869b;
+  color: #282828;
+}
+
+#bluetooth {
+  background-color: #d65d0e;
+  color: #282828;
+}
+
+#mpris {
+  background-color: #d65d0e;
+  color: #101010;
+}
+
+/* --- Tray Specifics --- */
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: transparent;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+/* --- Warnings --- */
+#cpu.critical,
+#memory.critical,
+#battery.warning,
+#battery.critical,
+#battery.urgent {
+  background-color: #fe8019;
+  color: #282828;
+}
