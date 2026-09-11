@@ -15,3 +15,6 @@ fcitx/dbus/
 # Secrets
 .env
 .env.*
+
+# # Local wallpaper collection
+# hypr/wallpapers/

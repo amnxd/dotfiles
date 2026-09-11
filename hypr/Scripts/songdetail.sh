@@ -1,1 +1,5 @@
-/home/aman/Projects/swen_hyprland_dotfile/hypr/Scripts/songdetail.sh
+#!/bin/bash
+
+song_info=$(playerctl metadata --format '{{title}}    {{artist}}')
+
+echo "$song_info"
