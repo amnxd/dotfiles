@@ -88,28 +88,28 @@ hl.config({
             left = 0
         },
         border_size = 0,
-        col = {
-            active_border = color4,
-            inactive_border = color0,
-        },
-        resize_on_border = true,
+        -- col = {
+        --     active_border = color4,
+        --     inactive_border = color0,
+        -- },
+        resize_on_border = false,
         allow_tearing = false,
         layout = "dwindle",
     },
 
     decoration = {
-        rounding = 5,
+        rounding = 0,
         rounding_power = 4,
 
         active_opacity = 1,
         inactive_opacity = 1,
 
-        shadow = {
-            enabled = true,
-            range = 12,
-            render_power = 3,
-            color = "rgba(00000040)",
-        },
+        -- shadow = {
+        --     enabled = true,
+        --     range = 12,
+        --     render_power = 3,
+        --     color = "rgba(00000040)",
+        -- },
 
         blur = {
             enabled = true,
@@ -251,7 +251,7 @@ hl.animation({
 -- Fading & UI Layers
 hl.animation({
     leaf = "border",
-    enabled = true,
+    enabled = false,
     speed = 4.0,
     bezier = "appleEaseOut"
 })
