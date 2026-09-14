@@ -2,77 +2,68 @@
 
 configuration {
     show-icons:      false;
-    /* 交互设置：悬停即选中，点击即执行 */
     hover-select:    true;
     me-select-entry: "";
     me-accept-entry: "MousePrimary";
 }
 
 * {
-    /* 颜色配置 */
-    bg: #00000088;       /* 背景加深一点，对比更明显 */
-    fg: #ffffff;
-    accent: #ffffff;
-    select-bg: #ffffff22;
-    
-    font: "JetBrainsMono Nerd Font 18";
+    bg:               #282828D9;
+    panel:            #1d2021E8;
+    cream:            #ebdbb2;
+    gold:             #fabd2f;
+    border:           #504945;
+    font:             "JetBrainsMono Nerd Font 15";
     background-color: transparent;
-    text-color: @fg;
+    text-color:       @cream;
 }
 
 window {
     fullscreen:       true;
     background-color: @bg;
-    /* * 这里的 padding 是为了把中间那一行“挤”在正中间 
-     * 上下 35% 的高度留白，左右留白由 listview 自动居中处理
-     */
-    padding:          35% 0%; 
+    padding:          38% 12%;
     children:         [ mainbox ];
 }
 
 mainbox {
-    children:         [ listview ];
+    children:         [ prompt, listview ];
+    spacing:          18px;
     background-color: transparent;
 }
 
+prompt {
+    horizontal-align: 0.5;
+    font:              "JetBrainsMono Nerd Font 14";
+    text-color:        @gold;
+}
+
 listview {
-    /* 核心改变：不分列，而是横向排列 */
-    layout:           horizontal;
-    
-    /* * 这里的 spacing 是图标之间的空隙
-     * 既然用了 horizontal，我们不需要 columns 属性了
-     */
-    spacing:          60px;
-    lines:            5;  /* 这里指总共有5个元素 */
-    
-    /* 居中大法 */
-    margin:           0px calc( 50% - 900px ); /* 动态计算左右边距以居中 (5个*300px + 间隙)/2 估算 */
-    fixed-height:     true;
+    layout:            horizontal;
+    lines:             5;
+    spacing:           14px;
+    fixed-height:      true;
+    background-color:  transparent;
 }
 
 element {
-    orientation:      vertical;
-    width:            280px; 
-    
-    /* 通过上下 padding 把高度撑起来，形成正方形 */
-    padding:          60px 0px; 
-    
-    border-radius:    40px;
-    border:           4px;
-    border-color:     transparent;
-    cursor:           pointer;
+    orientation:       vertical;
+    width:             176px;
+    padding:           24px 0px;
+    border-radius:     8px;
+    border:            1px;
+    border-color:      @border;
+    background-color:  @panel;
+    cursor:            pointer;
 }
 
 element-text {
-    font:            "JetBrainsMono Nerd Font 18";
-    horizontal-align: 0.5;
-    vertical-align:   0.5;
+    horizontal-align:  0.5;
+    vertical-align:    0.5;
+    text-color:        inherit;
 }
 
-/* 选中状态：白框 + 微微发亮 */
 element selected {
-    background-color: @select-bg;
-    border-color:     @accent;
-    text-color:       @accent;
-    border-radius:    40px;
+    background-color: @gold;
+    border-color:     @gold;
+    text-color:       #282828;
 }

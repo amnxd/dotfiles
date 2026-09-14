@@ -10,13 +10,13 @@ configuration {
 }
 
 * {
-    bg-base: #1e1e1eB3;
-    surface: #ffffff0d;
-    surface-border: #ffffff26;
-    fg: #ffffff;
-    muted: #ffffff80;
-    mac-blue: #0a84ff;
-    mac-blue-soft: #0a84ff26;
+    bg-base: #10151CEB;
+    surface: #ffffff0a;
+    surface-border: #ffffff1c;
+    fg: #f1f5fa;
+    muted: #9aa8b8;
+    mac-blue: #69b7ff;
+    mac-blue-soft: #69b7ff24;
 
     font: "SF Pro Text 12", "Sans 12";
     background-color: transparent;
@@ -24,31 +24,33 @@ configuration {
 }
 
 window {
-    width:            1000px;
-    height:           600px;
+    width:            1160px;
+    height:           680px;
     background-color: @bg-base;
     border:           1px;
     border-color:     @surface-border;
-    border-radius:    14px;
-    padding:          0px;
+    border-radius:    24px;
+    padding:          14px;
 }
 
 mainbox {
     children: [ inputbar, listview ];
-    spacing: 0px;
+    spacing: 10px;
 }
 
 inputbar {
-    spacing:          12px;
-    padding:          12px 16px;
+    spacing:          10px;
+    padding:          9px 14px;
     children:         [ prompt, entry ];
-    border:           0px 0px 1px 0px;
-    border-color:     @surface-border;
+    border:           1px;
+    border-color:      @surface-border;
+    background-color:  @surface;
+    border-radius:     12px;
 }
 
 prompt {
     text-color:       @muted;
-    font:             "Sans 14";
+    font:              "Sans 13";
     vertical-align:   0.5;
 }
 
@@ -57,15 +59,15 @@ entry {
     placeholder:       "Search wallpapers...";
     placeholder-color: @muted;
     vertical-align:    0.5;
-    font:              "SF Pro Text 14", "Sans 14";
+    font:              "SF Pro Text 13", "Sans 13";
     cursor:            text;
 }
 
 listview {
-    padding:          16px;
+    padding:          14px 10px 10px 10px;
     columns:          4;
     lines:            2;
-    spacing:          14px;
+    spacing:          18px;
     cycle:            true;
     dynamic:          true;
     layout:           vertical;
@@ -76,20 +78,19 @@ listview {
 
 element {
     orientation:       vertical;
-    padding:           10px;
-    spacing:           8px;
-    border-radius:     10px;
-    border:            1px;
-    border-color:      @surface-border;
-    background-color:  @surface;
+    padding:           9px;
+    spacing:           9px;
+    border-radius:     16px;
+    border:            0px;
+    background-color:  transparent;
     cursor:            pointer;
 }
 
 element-icon {
-    size:              160px;
+    size:              214px;
     horizontal-align:  0.5;
     vertical-align:    0.5;
-    border-radius:     8px;
+    border-radius:     12px;
     background-color:  transparent;
     cursor:            inherit;
 }
@@ -97,19 +98,20 @@ element-icon {
 element-text {
     horizontal-align:  0.5;
     vertical-align:    0.5;
-    padding:           4px 4px 0px 4px;
+    padding:           2px 4px 0px 4px;
     font:              "SF Pro Text 11", "Sans 11";
     text-color:        inherit;
     background-color:  transparent;
 }
 
 element normal.normal, element alternate.normal {
-    background-color: @surface;
+    background-color: transparent;
     text-color:       @fg;
 }
 
 element selected.normal {
     background-color: @mac-blue-soft;
+    border:           2px;
     border-color:     @mac-blue;
     text-color:       #ffffff;
 }

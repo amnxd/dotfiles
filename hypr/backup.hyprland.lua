@@ -177,9 +177,10 @@ hl.layer_rule({
 })
 
 -- ============================================================
--- ANIMATION CURVES (Unified macOS Physics)
+-- ANIMATION CURVES (Strictly Bounce-Free, Snappy macOS Profiles)
 -- ============================================================
 
+-- Fast window entrance/exit curve
 hl.curve("appleEaseOut", {
     type = "bezier",
     points = {
@@ -188,103 +189,133 @@ hl.curve("appleEaseOut", {
     }
 })
 
-hl.curve("appleFade", {
+-- Linear velocity profile for uncompromised productivity layout updates
+hl.curve("macStandard", {
     type = "bezier",
     points = {
-        { 0.3, 0 },
-        { 0.5, 1 }
+        { 0.25, 0.46 },
+        { 0.45, 0.94 }
     }
 })
 
+hl.curve("macLinear", {
+    type = "bezier",
+    points = {
+        { 0, 0 },
+        { 1, 1 }
+    }
+})
+
+
 -- ============================================================
--- ANIMATIONS (Harmonized at ~400ms)
+-- ANIMATIONS (High Performance & Clean Styling)
 -- ============================================================
 
 hl.animation({
     leaf = "global",
     enabled = true,
-    speed = 4.0,
-    bezier = "appleEaseOut"
+    speed = 3.5, -- 350ms standard macOS global transition speed
+    bezier = "macStandard"
 })
 
--- Windows
+-- Window opening: swift sliding acceleration with no overshoot
 hl.animation({
     leaf = "windowsIn",
     enabled = true,
-    speed = 4.0,
+    speed = 3.0, -- Snappy 300ms window instantiation
     bezier = "appleEaseOut",
     style = "slide"
 })
 
+-- Window closing: slightly quicker exit to prevent interface drag
 hl.animation({
     leaf = "windowsOut",
     enabled = true,
-    speed = 3.5,
+    speed = 2.4, -- Agile 240ms exit speed
     bezier = "appleEaseOut",
     style = "slide"
 })
 
+-- Window Tiling movements and layout swaps
 hl.animation({
     leaf = "windowsMove",
     enabled = true,
-    speed = 4.0,
+    speed = 3.2,
     bezier = "appleEaseOut"
 })
 
--- Workspaces
-hl.animation({
-    leaf = "workspaces",
-    enabled = true,
-    speed = 4.2,
-    bezier = "appleEaseOut",
-    style = "slide"
-})
-
-hl.animation({
-    leaf = "specialWorkspace",
-    enabled = true,
-    speed = 4.0,
-    bezier = "appleEaseOut",
-    style = "slidevert"
-})
-
--- Fading & UI Layers
+-- Borders
 hl.animation({
     leaf = "border",
     enabled = true,
-    speed = 4.0,
-    bezier = "appleEaseOut"
+    speed = 3.0,
+    bezier = "macStandard"
+})
+
+-- Fading transitions
+hl.animation({
+    leaf = "fadeIn",
+    enabled = true,
+    speed = 3.0,
+    bezier = "macLinear"
+})
+
+hl.animation({
+    leaf = "fadeOut",
+    enabled = true,
+    speed = 3.0,
+    bezier = "macLinear"
 })
 
 hl.animation({
     leaf = "fade",
     enabled = true,
-    speed = 4.0,
-    bezier = "appleFade"
+    speed = 3.0,
+    bezier = "macStandard"
 })
 
+-- UI Layers (Panels, Bars, Application Launchers like Rofi)
 hl.animation({
     leaf = "layers",
     enabled = true,
-    speed = 4.0,
-    bezier = "appleEaseOut"
+    speed = 3.0,
+    bezier = "macStandard"
 })
 
 hl.animation({
     leaf = "layersIn",
     enabled = true,
-    speed = 4.0,
-    bezier = "appleFade",
+    speed = 3.0,
+    bezier = "appleEaseOut",
     style = "fade"
 })
 
 hl.animation({
     leaf = "layersOut",
     enabled = true,
-    speed = 3.5,
-    bezier = "appleFade",
+    speed = 3.0,
+    bezier = "appleEaseOut",
     style = "fade"
 })
+
+-- Desktop Workspaces: Mission Control slide layout
+hl.animation({
+    leaf = "workspaces",
+    enabled = true,
+    speed = 3.8, -- Premium gliding slide speed
+    bezier = "appleEaseOut",
+    style = "slide"
+})
+
+-- Dropdown / Special Scratchpad panel
+hl.animation({
+    leaf = "specialWorkspace",
+    enabled = true,
+    speed = 3.6,
+    bezier = "appleEaseOut",
+    style = "slidevert"
+})
+
 
 -- ============================================================
 -- TOUCHPAD GESTURES

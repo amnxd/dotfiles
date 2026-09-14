@@ -5,6 +5,26 @@ waybar-tide-island-backup/
 
 # Application state
 Code - OSS/
+Code/
+Logseq/
+discord/
+mozilla/
+Postman/
+obsidian/
+app.mwco.excalidraw-desktop/
+libreoffice/
+
+# Authentication and machine state
+gh/hosts.yml
+pulse/cookie
+go/telemetry/
+**/Cookies*
+**/Trust Tokens*
+**/*token*
+**/*secret*
+**/*password*
+**/*.pem
+**/*.key
 
 # Fcitx generated state
 fcitx/dbus/

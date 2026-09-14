@@ -1,0 +1,11 @@
+[SddmGreeterTheme]
+Name=Evergreen
+Description=A quiet Gruvbox login theme for Hyprland
+Author=aman
+License=MIT
+Type=sddm-theme
+Version=1.0
+MainScript=Main.qml
+ConfigFile=theme.conf
+Theme-Id=evergreen
+Theme-API=2.0
