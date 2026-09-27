@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "LuaSnip": {
+      "rev": "0abc8f390b278c3b4aabc4c004ac8a088b65cf24",
+      "src": "https://github.com/L3MON4D3/LuaSnip"
+    },
     "SimpylFold": {
       "rev": "ff4c85197c5555715093c08a8d4f9d493c4d80cd",
       "src": "https://github.com/tmhedberg/SimpylFold"

@@ -1,0 +1,55 @@
+" Small Vim-compatible core matching the local Neovim setup.
+set backspace=indent,eol,start
+set softtabstop=4
+set shiftwidth=4
+set tabstop=2
+set noexpandtab
+set number
+set ruler
+set showcmd
+set title
+set joinspaces
+set mouse=a
+set laststatus=2
+set undofile
+set autoread
+set updatetime=200
+set splitright
+set splitbelow
+set cindent
+set cinoptions=N-s,g0,j1,(s,m1
+set ignorecase
+set smartcase
+set hidden
+syntax enable
+filetype plugin indent on
+set termguicolors
+
+" Keep Kitty's existing theme and color only syntax groups.
+highlight Normal guifg=#657b83 guibg=NONE
+highlight Comment guifg=#93a1a1 gui=italic
+highlight Constant guifg=#2aa198
+highlight String guifg=#2aa198
+highlight Character guifg=#2aa198
+highlight Number guifg=#2aa198
+highlight Boolean guifg=#2aa198
+highlight Identifier guifg=#268bd2
+highlight Function guifg=#268bd2
+highlight Statement guifg=#859900
+highlight PreProc guifg=#cb4b16
+highlight Type guifg=#b58900
+highlight Special guifg=#d33682
+highlight Todo guifg=#d33682 gui=bold
+
+let mapleader = " "
+let maplocalleader = " "
+
+" Keep the template local to Vim.
+inoremap <silent> ,cpp <C-o>:0read ~/.config/vim/template.cpp<CR><Esc>j
+
+augroup local_editor_defaults
+  autocmd!
+  autocmd BufEnter,FocusGained * if mode() ==# 'n' && getcmdwintype() ==# '' | checktime | endif
+  autocmd FileType tex let b:delimitMate_autoclose = 0
+  autocmd VimEnter * silent! call system('kitty @ set-spacing padding=0 margin=0')
+augroup END
